@@ -8,15 +8,9 @@ package mixpanel
 import (
 	"fmt"
 	"testing"
+	"mixpanel"
 )
 
 func TestMixpanel(*testing.T) {
 	fmt.Printf("Testing Mixpanel...\n")
-
-	m := Init("", "", "")
-	properties := map[string]string{
-		"hello": "world",
-		"red":   "blue",
-	}
-	m.Track("test", properties)
 }
